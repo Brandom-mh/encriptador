@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
     <img src="./assets/Logo.png"> 
     </header>
-    <main>
-    <textarea autofocus  rows="40" cols="40">Ingrese el texto aqui</textarea>
-
-    <img src="./assets/Group.png">Solo letras minúsculas y sin acentos
-
     
-        <button>Encriptar</button>
-        <button>Desencriptar</button>
-    <section>
+    <main>
+    <section class="texto_botones">
+    <textarea placeholder="Ingrese el texto aqui" rows="40" cols="40"></textarea>
+    <div class="Restriccion">
+    <img src="./assets/Group.png">
+        <p>Solo letras minúsculas y sin acentos</p>
+    </div>
+    <div class="botones" >
+        <button class="B_encriptar">Encriptar</button>
+        <button class="B_desencriptar">Desencriptar</button>
+    </div>
+    </section>
+
+    <section class="mostrar_mensaje">
         <img src="./assets/Muñeco.png">
-        <p>Ningun mensaje fue encontrado</p>
-        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        <p class="NotFound">Ningun mensaje fue encontrado</p>
+        <p class="Ingresa_texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <button class="B_Copiar">Copiar</button>
     </section>
 
     </main>
+
+    <footer>
+        <p>Desarrollado By Martinez Hernande Brandom</p>
+    </footer>
 </body>
 </html>
