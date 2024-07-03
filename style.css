@@ -19,14 +19,12 @@ header{
 }
 
 body{
-    box-sizing: border-box;
     background-color: var(--Color-fondo);
 }
 
 main{
     display: flex;
     justify-content: space-between;
-    padding-right: 5%;
 
 }
 
@@ -52,7 +50,7 @@ textarea::placeholder{
 
 
 .texto_botones{
-    padding: 7% 10% 3% 12%;
+    padding: 5% 10% 3% 9%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -94,10 +92,8 @@ textarea::placeholder{
 
 .mostrar_mensaje{
     border-radius: 32px;
-    padding: 5%;
+    padding: 4%;
     background-color: white;
-    width: 400px;
-    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,6 +101,12 @@ textarea::placeholder{
     text-align: center;
     gap: 32px;
 
+}
+
+.Mensaje_Encriptado{
+    font-family: var(--Font-inter);
+    font-size: 24px;
+    color: var(--Color-restriccion);
 }
 .NotFound{
     font-family: var(--Font-inter-bold);
@@ -137,4 +139,105 @@ footer{
     font-family: var(--Font-inter-bold);
     color: var(--Color-restriccion);
     font-size: 10px;
+}
+
+@media(max-width:768px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+    }
+
+    textarea{
+        width: 700px;
+        height: 692px;
+
+    }
+
+    .texto_botones{
+        padding: 10% 10% 3% 1%;
+        width: 80%;
+    }
+
+    .botones{
+        gap: 24px;
+    }
+
+    .B_encriptar{
+        width: 332px;
+        height: 67px;
+    }
+
+    .B_desencriptar{
+        width: 332px;
+        height: 67px;
+        background-color: var(--Color-fondo);
+    }
+
+    .mostrar_mensaje{
+        padding: 2% 1% 2% 1%;
+        width: 100%;
+        
+    }
+
+    .Img_muneco{
+        display: none;
+    }
+
+    footer{
+        padding:1%;
+    }
+
+    .B_Copiar{
+        height: 67px;
+        width: 624px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+}
+
+
+@media(max-width:375px){
+    
+    main{
+        align-items: center;
+        padding: 2%;
+        gap:24px;
+    }
+    .texto_botones{
+        padding: 2% 1% 2% 10%;
+        width: 100%;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .B_encriptar{
+        width: 343px;
+        height: 67px;
+        font-size: 1rem;
+    }
+
+    .B_desencriptar{
+        width: 343px;
+        height: 67px;
+        font-size: 1rem;
+    }
+
+    .mostrar_mensaje{
+        padding: 2% 1% 2% 1%;
+        width: 100%;
+        
+    }
+
+    .B_Copiar{
+        display: flex;
+        width: 343px;
+        height: 67px;
+        
+    }
 }
