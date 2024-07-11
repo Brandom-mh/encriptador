@@ -72,6 +72,7 @@ textarea::placeholder{
     gap:24px;
 }
 
+
 .B_encriptar{
     width: 328px;
     height: 67px;
@@ -81,6 +82,13 @@ textarea::placeholder{
     border:none
 }
 
+.B_encriptar:hover{
+    background-color: var(--Color-fill);
+    color: #0A3871;
+    border: 2px solid var(--Color-Dark-blue);
+
+}
+
 .B_desencriptar{
     width: 328px;
     height: 67px;
@@ -88,7 +96,12 @@ textarea::placeholder{
     border: 2px solid var(--Color-Dark-blue);
     color: var(--Color-Dark-blue);
     background-color: var(--Color-fill);
-    
+}
+.B_desencriptar:hover{
+    background-color: var(--Color-Dark-blue);
+    color: #0A3871;
+    border: 2px solid var(--Color-Dark-blue);
+    color: var(--Color-fondo);
 }
 
 .mostrar_mensaje{
@@ -136,6 +149,12 @@ textarea::placeholder{
     display: none;
     margin-top: auto;
 
+}
+.B_Copiar:hover{
+    background-color: var(--Color-Dark-blue);
+    color: #0A3871;
+    border: 2px solid var(--Color-Dark-blue);
+    color: var(--Color-fondo);
 }
 
 footer{
